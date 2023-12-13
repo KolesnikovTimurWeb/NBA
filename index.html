@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>NBA</title>
+
+   <!-- CSS -->
+   <link rel="stylesheet" href="./css/swiper-bundle2.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+   <header>
+      <div class="header-container">
+         <div class="header-logo">
+            <img class="header-logo-img" src="./img/header/logo.svg" alt="">
+            <div>
+
+               <img class="header-logo-text" src="./img/header/logo-text.webp" alt="">
+
+            </div>
+
+
+         </div>
+         <div class="header-menu-text">
+            <p>MENU</p>
+         </div>
+         <div class="header-div">
+            <div class="header-stroke">
+               <span></span>
+            </div>
+            <div class="header-text">
+               <h3>The ultimate resource for applying evidence-based ideas in basketball</h3>
+            </div>
+            <nav class="header-nav">
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Resources</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <a href="#" class="header-button">Log In</a>
+
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div class="header-menu">
+         <div class="nav">
+            <div class="item">
+               <h3>Home</h3>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect width="30" height="30" fill="#0095A6" />
+                  <path
+                     d="M19.8839 15.8839C20.372 15.3957 20.372 14.6043 19.8839 14.1161L11.9289 6.16117C11.4408 5.67301 10.6493 5.67301 10.1612 6.16117C9.67301 6.64932 9.67301 7.44078 10.1612 7.92893L17.2322 15L10.1612 22.0711C9.67301 22.5592 9.67301 23.3507 10.1612 23.8388C10.6493 24.327 11.4408 24.327 11.9289 23.8388L19.8839 15.8839ZM18 16.25L19 16.25L19 13.75L18 13.75L18 16.25Z"
+                     fill="white" />
+               </svg>
+            </div>
+            <div class="item">
+               <h3>Home</h3>
+
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect width="30" height="30" fill="#0095A6" />
+                  <path
+                     d="M19.8839 15.8839C20.372 15.3957 20.372 14.6043 19.8839 14.1161L11.9289 6.16117C11.4408 5.67301 10.6493 5.67301 10.1612 6.16117C9.67301 6.64932 9.67301 7.44078 10.1612 7.92893L17.2322 15L10.1612 22.0711C9.67301 22.5592 9.67301 23.3507 10.1612 23.8388C10.6493 24.327 11.4408 24.327 11.9289 23.8388L19.8839 15.8839ZM18 16.25L19 16.25L19 13.75L18 13.75L18 16.25Z"
+                     fill="white" />
+               </svg>
+            </div>
+            <div class="item">
+               <h3>Home</h3>
+
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect width="30" height="30" fill="#0095A6" />
+                  <path
+                     d="M19.8839 15.8839C20.372 15.3957 20.372 14.6043 19.8839 14.1161L11.9289 6.16117C11.4408 5.67301 10.6493 5.67301 10.1612 6.16117C9.67301 6.64932 9.67301 7.44078 10.1612 7.92893L17.2322 15L10.1612 22.0711C9.67301 22.5592 9.67301 23.3507 10.1612 23.8388C10.6493 24.327 11.4408 24.327 11.9289 23.8388L19.8839 15.8839ZM18 16.25L19 16.25L19 13.75L18 13.75L18 16.25Z"
+                     fill="white" />
+               </svg>
+            </div>
+            <div class="item">
+               <h3>Home</h3>
+
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <rect width="30" height="30" fill="#0095A6" />
+                  <path
+                     d="M19.8839 15.8839C20.372 15.3957 20.372 14.6043 19.8839 14.1161L11.9289 6.16117C11.4408 5.67301 10.6493 5.67301 10.1612 6.16117C9.67301 6.64932 9.67301 7.44078 10.1612 7.92893L17.2322 15L10.1612 22.0711C9.67301 22.5592 9.67301 23.3507 10.1612 23.8388C10.6493 24.327 11.4408 24.327 11.9289 23.8388L19.8839 15.8839ZM18 16.25L19 16.25L19 13.75L18 13.75L18 16.25Z"
+                     fill="white" />
+               </svg>
+            </div>
+         </div>
+         <div class="social">
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path
+                     d="M34.8334 19.0961C34.8334 10.298 27.7454 3.16669 19.0001 3.16669C10.2548 3.16669 3.16675 10.298 3.16675 19.0961C3.16675 27.0486 8.95542 33.6385 16.5259 34.8334V23.7015H12.5063V19.095H16.5259V15.5864C16.5259 11.5942 18.8892 9.38813 22.5066 9.38813C24.2377 9.38813 26.0512 9.69952 26.0512 9.69952V13.6199H24.053C22.0865 13.6199 21.4743 14.8485 21.4743 16.1089V19.0961H25.8654L25.1635 23.7004H21.4743V34.8334C29.0447 33.6385 34.8334 27.0486 34.8334 19.0961Z"
+                     fill="white"></path>
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M19 4.75C15.1297 4.75 14.6452 4.76615 13.1252 4.8355C11.608 4.90485 10.5716 5.14615 9.6653 5.4986C8.7153 5.8558 7.85365 6.4163 7.14115 7.1421C6.41651 7.85378 5.85567 8.71482 5.49765 9.6653C5.1471 10.5716 4.90485 11.609 4.8355 13.1262C4.7671 14.6452 4.75 15.1287 4.75 19C4.75 22.8713 4.76615 23.3548 4.8355 24.8748C4.90485 26.392 5.14615 27.4284 5.4986 28.3347C5.8558 29.2847 6.4163 30.1463 7.1421 30.8588C7.8538 31.5835 8.71483 32.1443 9.6653 32.5023C10.5716 32.8538 11.608 33.0951 13.1252 33.1645C14.6452 33.2338 15.1297 33.25 19 33.25C22.8703 33.25 23.3548 33.2338 24.8748 33.1645C26.392 33.0951 27.4284 32.8538 28.3347 32.5014C29.2847 32.1442 30.1463 31.5837 30.8588 30.8579C31.5835 30.1462 32.1443 29.2852 32.5023 28.3347C32.8538 27.4284 33.0951 26.392 33.1645 24.8748C33.2338 23.3548 33.25 22.8703 33.25 19C33.25 15.1297 33.2338 14.6452 33.1645 13.1252C33.0951 11.608 32.8538 10.5716 32.5014 9.6653C32.1436 8.71441 31.5828 7.853 30.8579 7.14115C30.1462 6.41651 29.2852 5.85567 28.3347 5.49765C27.4284 5.1471 26.391 4.90485 24.8738 4.8355C23.3548 4.7671 22.8713 4.75 19 4.75ZM19 7.31785C22.8048 7.31785 23.256 7.3321 24.7589 7.4005C26.1478 7.46415 26.9021 7.695 27.4046 7.89165C28.0697 8.1491 28.5447 8.4588 29.0434 8.9566C29.5422 9.45535 29.8509 9.93035 30.1084 10.5953C30.3041 11.0979 30.5358 11.8522 30.5995 13.2411C30.6679 14.744 30.6821 15.1952 30.6821 19C30.6821 22.8048 30.6679 23.256 30.5995 24.7589C30.5358 26.1478 30.305 26.9021 30.1084 27.4046C29.8803 28.0236 29.5164 28.5836 29.0434 29.0434C28.5837 29.5165 28.0237 29.8804 27.4046 30.1084C26.9021 30.3041 26.1478 30.5358 24.7589 30.5995C23.256 30.6679 22.8057 30.6821 19 30.6821C15.1943 30.6821 14.744 30.6679 13.2411 30.5995C11.8522 30.5358 11.0979 30.305 10.5953 30.1084C9.97638 29.8803 9.41641 29.5164 8.9566 29.0434C8.48367 28.5836 8.11977 28.0236 7.89165 27.4046C7.69595 26.9021 7.46415 26.1478 7.4005 24.7589C7.3321 23.256 7.31785 22.8048 7.31785 19C7.31785 15.1952 7.3321 14.744 7.4005 13.2411C7.46415 11.8522 7.695 11.0979 7.89165 10.5953C8.1491 9.93035 8.4588 9.45535 8.9566 8.9566C9.41634 8.48354 9.97634 8.11963 10.5953 7.89165C11.0979 7.69595 11.8522 7.46415 13.2411 7.4005C14.744 7.3321 15.1952 7.31785 19 7.31785Z"
+                     fill="white"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M19 23.7548C18.3756 23.7548 17.7573 23.6318 17.1805 23.3928C16.6036 23.1539 16.0794 22.8036 15.6379 22.3621C15.1964 21.9206 14.8462 21.3964 14.6072 20.8196C14.3683 20.2427 14.2453 19.6244 14.2453 19C14.2453 18.3756 14.3683 17.7573 14.6072 17.1804C14.8462 16.6036 15.1964 16.0794 15.6379 15.6379C16.0794 15.1964 16.6036 14.8461 17.1805 14.6072C17.7573 14.3682 18.3756 14.2453 19 14.2453C20.2611 14.2453 21.4705 14.7462 22.3622 15.6379C23.2538 16.5296 23.7548 17.739 23.7548 19C23.7548 20.261 23.2538 21.4704 22.3622 22.3621C21.4705 23.2538 20.2611 23.7548 19 23.7548ZM19 11.6755C17.0575 11.6755 15.1944 12.4472 13.8208 13.8208C12.4472 15.1944 11.6755 17.0574 11.6755 19C11.6755 20.9426 12.4472 22.8056 13.8208 24.1792C15.1944 25.5528 17.0575 26.3245 19 26.3245C20.9426 26.3245 22.8056 25.5528 24.1792 24.1792C25.5528 22.8056 26.3245 20.9426 26.3245 19C26.3245 17.0574 25.5528 15.1944 24.1792 13.8208C22.8056 12.4472 20.9426 11.6755 19 11.6755ZM28.4554 11.5425C28.4554 12.0017 28.273 12.4421 27.9483 12.7668C27.6236 13.0915 27.1832 13.2739 26.724 13.2739C26.2648 13.2739 25.8244 13.0915 25.4997 12.7668C25.175 12.4421 24.9926 12.0017 24.9926 11.5425C24.9926 11.0833 25.175 10.6429 25.4997 10.3182C25.8244 9.99354 26.2648 9.81113 26.724 9.81113C27.1832 9.81113 27.6236 9.99354 27.9483 10.3182C28.273 10.6429 28.4554 11.0833 28.4554 11.5425Z"
+                     fill="white"></path>
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path
+                     d="M31.5915 12.5401C31.6108 12.8193 31.6108 13.0984 31.6108 13.3802C31.6108 21.9649 25.0755 31.8656 13.1254 31.8656V31.8604C9.59528 31.8656 6.13851 30.8544 3.16675 28.9479C3.68005 29.0096 4.19593 29.0405 4.7131 29.0418C7.63855 29.0443 10.4804 28.0628 12.7819 26.2553C10.0018 26.2025 7.56393 24.3899 6.71228 21.7436C7.68615 21.9314 8.6896 21.8928 9.64545 21.6317C6.61451 21.0193 4.43393 18.3563 4.43393 15.2636C4.43393 15.2353 4.43393 15.2083 4.43393 15.1813C5.33704 15.6843 6.34821 15.9634 7.38254 15.9943C4.52784 14.0865 3.64789 10.2888 5.37177 7.31958C8.6703 11.3784 13.5371 13.8459 18.7614 14.107C18.2378 11.8506 18.9531 9.48601 20.641 7.89979C23.2577 5.44004 27.3731 5.56611 29.8329 8.18152C31.2879 7.89464 32.6824 7.36075 33.9586 6.6043C33.4736 8.10819 32.4586 9.38567 31.1026 10.1974C32.3904 10.0456 33.6486 9.70085 34.8334 9.17469C33.9612 10.4817 32.8625 11.6203 31.5915 12.5401Z"
+                     fill="white"></path>
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                  <path
+                     d="M30.1924 9.76451C28.3969 8.62306 27.1009 6.79674 26.6967 4.66774C26.6093 4.20775 26.5614 3.73435 26.5614 3.24998H20.8307L20.8215 25.6424C20.7252 28.15 18.6084 30.1626 16.0135 30.1626C15.207 30.1626 14.4475 29.966 13.7789 29.6229C12.2456 28.8362 11.1963 27.2691 11.1963 25.4658C11.1963 22.8759 13.3574 20.7688 16.0135 20.7688C16.5093 20.7688 16.9849 20.8486 17.4349 20.986V15.2819C16.9692 15.2201 16.4962 15.1814 16.0135 15.1814C10.1972 15.1814 5.46558 19.795 5.46558 25.4658C5.46558 28.9452 7.2485 32.0242 9.96855 33.8861C11.6819 35.0588 13.7659 35.75 16.0135 35.75C21.8297 35.75 26.5614 31.1367 26.5614 25.4658V14.111C28.809 15.6839 31.5628 16.6107 34.5342 16.6107V11.0233C32.9335 11.0233 31.4427 10.5594 30.1924 9.76451Z"
+                     fill="white"></path>
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M31.3375 8.57336C32.6993 8.93921 33.7765 10.0165 34.1424 11.3782C34.8131 13.8579 34.8334 19.0002 34.8334 19.0002C34.8334 19.0002 34.8334 24.1628 34.1627 26.6221C33.7968 27.9839 32.7196 29.0612 31.3578 29.427C28.8985 30.0978 19.0001 30.0978 19.0001 30.0978C19.0001 30.0978 9.10171 30.0978 6.64236 29.427C5.28057 29.0612 4.20333 27.9839 3.83748 26.6221C3.16675 24.1425 3.16675 19.0002 3.16675 19.0002C3.16675 19.0002 3.16675 13.8579 3.81715 11.3986C4.18301 10.0368 5.26024 8.95955 6.62203 8.5937C9.08138 7.92295 18.9798 7.90263 18.9798 7.90263C18.9798 7.90263 28.8781 7.90263 31.3375 8.57336ZM24.0407 19.0002L15.8293 23.7563V14.2441L24.0407 19.0002Z"
+                     fill="white"></path>
+               </svg>
+            </a>
+         </div>
+      </div>
+      <div class="header-absolute">
+         <div class="header-top">
+            <p class="menu">Social media</p>
+            <p class="close"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                  fill="none">
+                  <path
+                     d="M2.80819 0.807042L11 8.99886L19.1918 0.807042L21.193 2.80818L13.0012 11L21.193 19.1918L19.1918 21.193L15.0959 17.097L11 13.0011L2.80819 21.193L0.807053 19.1918L8.99887 11L4.90296 6.90409L0.807052 2.80818L2.80819 0.807042Z"
+                     fill="white" />
+               </svg></p>
+         </div>
+         <div class="header-bottom">
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path
+                     d="M34.8334 19.0961C34.8334 10.298 27.7454 3.16669 19.0001 3.16669C10.2548 3.16669 3.16675 10.298 3.16675 19.0961C3.16675 27.0486 8.95542 33.6385 16.5259 34.8334V23.7015H12.5063V19.095H16.5259V15.5864C16.5259 11.5942 18.8892 9.38813 22.5066 9.38813C24.2377 9.38813 26.0512 9.69952 26.0512 9.69952V13.6199H24.053C22.0865 13.6199 21.4743 14.8485 21.4743 16.1089V19.0961H25.8654L25.1635 23.7004H21.4743V34.8334C29.0447 33.6385 34.8334 27.0486 34.8334 19.0961Z"
+                     fill="white" />
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M19 4.75C15.1297 4.75 14.6452 4.76615 13.1252 4.8355C11.608 4.90485 10.5716 5.14615 9.6653 5.4986C8.7153 5.8558 7.85365 6.4163 7.14115 7.1421C6.41651 7.85378 5.85567 8.71482 5.49765 9.6653C5.1471 10.5716 4.90485 11.609 4.8355 13.1262C4.7671 14.6452 4.75 15.1287 4.75 19C4.75 22.8713 4.76615 23.3548 4.8355 24.8748C4.90485 26.392 5.14615 27.4284 5.4986 28.3347C5.8558 29.2847 6.4163 30.1463 7.1421 30.8588C7.8538 31.5835 8.71483 32.1443 9.6653 32.5023C10.5716 32.8538 11.608 33.0951 13.1252 33.1645C14.6452 33.2338 15.1297 33.25 19 33.25C22.8703 33.25 23.3548 33.2338 24.8748 33.1645C26.392 33.0951 27.4284 32.8538 28.3347 32.5014C29.2847 32.1442 30.1463 31.5837 30.8588 30.8579C31.5835 30.1462 32.1443 29.2852 32.5023 28.3347C32.8538 27.4284 33.0951 26.392 33.1645 24.8748C33.2338 23.3548 33.25 22.8703 33.25 19C33.25 15.1297 33.2338 14.6452 33.1645 13.1252C33.0951 11.608 32.8538 10.5716 32.5014 9.6653C32.1436 8.71441 31.5828 7.853 30.8579 7.14115C30.1462 6.41651 29.2852 5.85567 28.3347 5.49765C27.4284 5.1471 26.391 4.90485 24.8738 4.8355C23.3548 4.7671 22.8713 4.75 19 4.75ZM19 7.31785C22.8048 7.31785 23.256 7.3321 24.7589 7.4005C26.1478 7.46415 26.9021 7.695 27.4046 7.89165C28.0697 8.1491 28.5447 8.4588 29.0434 8.9566C29.5422 9.45535 29.8509 9.93035 30.1084 10.5953C30.3041 11.0979 30.5358 11.8522 30.5995 13.2411C30.6679 14.744 30.6821 15.1952 30.6821 19C30.6821 22.8048 30.6679 23.256 30.5995 24.7589C30.5358 26.1478 30.305 26.9021 30.1084 27.4046C29.8803 28.0236 29.5164 28.5836 29.0434 29.0434C28.5837 29.5165 28.0237 29.8804 27.4046 30.1084C26.9021 30.3041 26.1478 30.5358 24.7589 30.5995C23.256 30.6679 22.8057 30.6821 19 30.6821C15.1943 30.6821 14.744 30.6679 13.2411 30.5995C11.8522 30.5358 11.0979 30.305 10.5953 30.1084C9.97638 29.8803 9.41641 29.5164 8.9566 29.0434C8.48367 28.5836 8.11977 28.0236 7.89165 27.4046C7.69595 26.9021 7.46415 26.1478 7.4005 24.7589C7.3321 23.256 7.31785 22.8048 7.31785 19C7.31785 15.1952 7.3321 14.744 7.4005 13.2411C7.46415 11.8522 7.695 11.0979 7.89165 10.5953C8.1491 9.93035 8.4588 9.45535 8.9566 8.9566C9.41634 8.48354 9.97634 8.11963 10.5953 7.89165C11.0979 7.69595 11.8522 7.46415 13.2411 7.4005C14.744 7.3321 15.1952 7.31785 19 7.31785Z"
+                     fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M19 23.7548C18.3756 23.7548 17.7573 23.6318 17.1805 23.3928C16.6036 23.1539 16.0794 22.8036 15.6379 22.3621C15.1964 21.9206 14.8462 21.3964 14.6072 20.8196C14.3683 20.2427 14.2453 19.6244 14.2453 19C14.2453 18.3756 14.3683 17.7573 14.6072 17.1804C14.8462 16.6036 15.1964 16.0794 15.6379 15.6379C16.0794 15.1964 16.6036 14.8461 17.1805 14.6072C17.7573 14.3682 18.3756 14.2453 19 14.2453C20.2611 14.2453 21.4705 14.7462 22.3622 15.6379C23.2538 16.5296 23.7548 17.739 23.7548 19C23.7548 20.261 23.2538 21.4704 22.3622 22.3621C21.4705 23.2538 20.2611 23.7548 19 23.7548ZM19 11.6755C17.0575 11.6755 15.1944 12.4472 13.8208 13.8208C12.4472 15.1944 11.6755 17.0574 11.6755 19C11.6755 20.9426 12.4472 22.8056 13.8208 24.1792C15.1944 25.5528 17.0575 26.3245 19 26.3245C20.9426 26.3245 22.8056 25.5528 24.1792 24.1792C25.5528 22.8056 26.3245 20.9426 26.3245 19C26.3245 17.0574 25.5528 15.1944 24.1792 13.8208C22.8056 12.4472 20.9426 11.6755 19 11.6755ZM28.4554 11.5425C28.4554 12.0017 28.273 12.4421 27.9483 12.7668C27.6236 13.0915 27.1832 13.2739 26.724 13.2739C26.2648 13.2739 25.8244 13.0915 25.4997 12.7668C25.175 12.4421 24.9926 12.0017 24.9926 11.5425C24.9926 11.0833 25.175 10.6429 25.4997 10.3182C25.8244 9.99354 26.2648 9.81113 26.724 9.81113C27.1832 9.81113 27.6236 9.99354 27.9483 10.3182C28.273 10.6429 28.4554 11.0833 28.4554 11.5425Z"
+                     fill="white" />
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path
+                     d="M31.5915 12.5401C31.6108 12.8193 31.6108 13.0984 31.6108 13.3802C31.6108 21.9649 25.0755 31.8656 13.1254 31.8656V31.8604C9.59528 31.8656 6.13851 30.8544 3.16675 28.9479C3.68005 29.0096 4.19593 29.0405 4.7131 29.0418C7.63855 29.0443 10.4804 28.0628 12.7819 26.2553C10.0018 26.2025 7.56393 24.3899 6.71228 21.7436C7.68615 21.9314 8.6896 21.8928 9.64545 21.6317C6.61451 21.0193 4.43393 18.3563 4.43393 15.2636C4.43393 15.2353 4.43393 15.2083 4.43393 15.1813C5.33704 15.6843 6.34821 15.9634 7.38254 15.9943C4.52784 14.0865 3.64789 10.2888 5.37177 7.31958C8.6703 11.3784 13.5371 13.8459 18.7614 14.107C18.2378 11.8506 18.9531 9.48601 20.641 7.89979C23.2577 5.44004 27.3731 5.56611 29.8329 8.18152C31.2879 7.89464 32.6824 7.36075 33.9586 6.6043C33.4736 8.10819 32.4586 9.38567 31.1026 10.1974C32.3904 10.0456 33.6486 9.70085 34.8334 9.17469C33.9612 10.4817 32.8625 11.6203 31.5915 12.5401Z"
+                     fill="white" />
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                  <path
+                     d="M30.1924 9.76451C28.3969 8.62306 27.1009 6.79674 26.6967 4.66774C26.6093 4.20775 26.5614 3.73435 26.5614 3.24998H20.8307L20.8215 25.6424C20.7252 28.15 18.6084 30.1626 16.0135 30.1626C15.207 30.1626 14.4475 29.966 13.7789 29.6229C12.2456 28.8362 11.1963 27.2691 11.1963 25.4658C11.1963 22.8759 13.3574 20.7688 16.0135 20.7688C16.5093 20.7688 16.9849 20.8486 17.4349 20.986V15.2819C16.9692 15.2201 16.4962 15.1814 16.0135 15.1814C10.1972 15.1814 5.46558 19.795 5.46558 25.4658C5.46558 28.9452 7.2485 32.0242 9.96855 33.8861C11.6819 35.0588 13.7659 35.75 16.0135 35.75C21.8297 35.75 26.5614 31.1367 26.5614 25.4658V14.111C28.809 15.6839 31.5628 16.6107 34.5342 16.6107V11.0233C32.9335 11.0233 31.4427 10.5594 30.1924 9.76451Z"
+                     fill="white" />
+               </svg>
+            </a>
+            <a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M31.3375 8.57336C32.6993 8.93921 33.7765 10.0165 34.1424 11.3782C34.8131 13.8579 34.8334 19.0002 34.8334 19.0002C34.8334 19.0002 34.8334 24.1628 34.1627 26.6221C33.7968 27.9839 32.7196 29.0612 31.3578 29.427C28.8985 30.0978 19.0001 30.0978 19.0001 30.0978C19.0001 30.0978 9.10171 30.0978 6.64236 29.427C5.28057 29.0612 4.20333 27.9839 3.83748 26.6221C3.16675 24.1425 3.16675 19.0002 3.16675 19.0002C3.16675 19.0002 3.16675 13.8579 3.81715 11.3986C4.18301 10.0368 5.26024 8.95955 6.62203 8.5937C9.08138 7.92295 18.9798 7.90263 18.9798 7.90263C18.9798 7.90263 28.8781 7.90263 31.3375 8.57336ZM24.0407 19.0002L15.8293 23.7563V14.2441L24.0407 19.0002Z"
+                     fill="white" />
+               </svg>
+            </a>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section class="main-section section">
+         <div class="container">
+            <div class="text">
+               <h1>Changing How <br>
+                  We Think About
+                  <span>Basketball Performance</span>
+               </h1>
+            </div>
+         </div>
+
+
+         <div class="main-becround">
+            <video autoplay muted playsinline>
+               <source src="./img/video.mp4" type="video/mp4">
+            </video>
+         </div>
+         <div class="main-decoration">
+            <img src="./img/bacround/paper-down.webp" alt="">
+         </div>
+      </section>
+
+      <section class="section we-strave">
+         <div class="container">
+            <div class="we-strave-top">
+               <div>
+                  <img src="./img/westrave/logo-top.svg" alt="">
+
+               </div>
+               <h2><span>We strive to transform</span> the basketball world by helping individuals and organisations
+                  adopt an
+                  evidence-based approach.</h2>
+            </div>
+            <div class="we-streave-bottom">
+               <img class="pc" src="./img/westrave/westrave-img.webp" alt="">
+               <img class="mobile" src="./img/westrave/westrave-img-MOILE.webp" alt="">
+
+               <div class="text-block">
+                  <p>Transforming exists to help practitioners make sense of the constraints-led approach <br> (CLA)
+                     underpinned by ecological dynamics</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section online-education">
+         <div class="container title">
+            <div class="div">
+               <h2>Industry Leading </h2>
+
+               <svg xmlns="http://www.w3.org/2000/svg" width="612" height="154" viewBox="0 0 612 154" fill="none">
+                  <path d="M0.164343 35.1698L611.244 1.86131e-05L592.843 121.129L31.1253 153.712L0.164343 35.1698Z"
+                     fill="#0095A6" />
+               </svg>
+            </div>
+            <div>
+               <h3>Online Education</h3>
+               <svg xmlns="http://www.w3.org/2000/svg" width="848" height="170" viewBox="0 0 848 170" fill="none">
+                  <path d="M0 6.10352e-05H848L815.709 170H32.2907L0 6.10352e-05Z" fill="white" />
+               </svg>
+            </div>
+         </div>
+         <div class="container">
+            <div class="grid">
+               <div class="items">
+                  <h2>Clinics </h2>
+
+                  <div class="bacround-1">
+                     <svg width="229" height="480" viewBox="0 0 229 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="273" cy="240" r="264.5" stroke="white" stroke-width="17" />
+                     </svg>
+
+                  </div>
+
+                  <div class="active">
+                     <h2>Clinics</h2>
+
+                     <p>Entry-level access to evidence-based ideas in 60 minutes or less</p>
+
+                     <div class="after">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                           <path d="M0 50H50V0L0 50Z" fill="#0095A6" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="items">
+                  <h2>Workshops </h2>
+                  <div class="bacround-2">
+                     <svg width="293" height="289" viewBox="0 0 293 289" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="337" cy="-47.9999" r="328.5" stroke="white" stroke-width="17" />
+                     </svg>
+                  </div>
+                  <div class="bacround-3">
+                     <svg width="96" height="280" viewBox="0 0 96 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="-44" cy="140" r="131.5" stroke="white" stroke-width="17" />
+                     </svg>
+
+                  </div>
+
+                  <div class="active">
+                     <h2>Clinics</h2>
+
+                     <p>Entry-level access to evidence-based ideas in 60 minutes or less</p>
+
+                     <div class="after">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                           <path d="M0 50H50V0L0 50Z" fill="#0095A6" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="items">
+                  <h2>Courses </h2>
+                  <div class="bacround-4">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="480" viewBox="0 0 18 480" fill="none">
+                        <path d="M9 0V480" stroke="white" stroke-width="17" />
+                     </svg>
+                  </div>
+
+                  <div class="active">
+                     <h2>Clinics</h2>
+
+                     <p>Entry-level access to evidence-based ideas in 60 minutes or less</p>
+
+                     <div class="after">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                           <path d="M0 50H50V0L0 50Z" fill="#0095A6" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section information">
+         <div class="container">
+            <div class="image">
+               <img class="pc" src="./img/information/img.webp" alt="">
+               <img class="mobile" src="./img/information/img-mobile.webp" alt="">
+
+            </div>
+
+            <div class="title">
+               <h2>Helping programs and organisations across the world transcend out of siloed operational approaches by
+                  adopting an ecological dynamics lens in basketball performance</h2>
+
+
+               <div class="bacround-1">
+                  <svg class="svg-pc" xmlns="http://www.w3.org/2000/svg" width="1529" height="201"
+                     viewBox="0 0 1529 201" fill="none">
+                     <path d="M0 0.93158H1529L1496.71 200.932H32.2907L0 0.93158Z" fill="#D56B37" />
+                  </svg>
+
+                  <svg class="svg-mobile" xmlns="http://www.w3.org/2000/svg" width="345" height="161"
+                     viewBox="0 0 345 161" fill="none">
+                     <path d="M0 0.302612H345L334.686 160.303H10.3138L0 0.302612Z" fill="#D56B37" />
+                  </svg>
+               </div>
+               <div class="bacround-2">
+                  <svg class="svg-pc" xmlns="http://www.w3.org/2000/svg" width="1239" height="269"
+                     viewBox="0 0 1239 269" fill="none">
+                     <path d="M0.911477 70.1136L1238.06 -1.54299e-06L1215.84 201.367L43.1873 268.244L0.911477 70.1136Z"
+                        fill="#001A25" />
+                  </svg>
+
+                  <svg class="svg-mobile" xmlns="http://www.w3.org/2000/svg" width="313" height="183"
+                     viewBox="0 0 313 183" fill="none">
+                     <path d="M0.128502 19.7432L312.35 -5.67944e-06L306.637 162.379L12.2588 182.227L0.128502 19.7432Z"
+                        fill="#001A25" />
+                  </svg>
+               </div>
+            </div>
+            <div class="image">
+               <img src="./img/information/main-img.webp" alt="">
+            </div>
+         </div>
+      </section>
+
+
+      <section class="section blogs">
+         <div class="container title">
+            <div class="div">
+               <h2>Helping practitioners and players</h2>
+
+               <svg xmlns="http://www.w3.org/2000/svg" width="872" height="155" viewBox="0 0 872 155" fill="none">
+                  <path d="M-0.00012207 35.6694L871.078 0.499698L852.678 121.629L30.9608 154.212L-0.00012207 35.6694Z"
+                     fill="#0095A6" />
+               </svg>
+            </div>
+            <div>
+               <h3>unlock their full potential</h3>
+               <svg xmlns="http://www.w3.org/2000/svg" width="1138" height="170" viewBox="0 0 1138 170" fill="none">
+                  <path d="M0 0.00244141H1138L1105.71 170.002H32.2907L0 0.00244141Z" fill="white" />
+               </svg>
+            </div>
+         </div>
+         <div class="container grid">
+            <div class="item">
+               <div class="item-img">
+                  <img src="./img/blogs/blog-1.webp" alt="">
+                  <h2>Blogs & Free resources</h2>
+               </div>
+               <div class="button">
+                  <div class="bacround-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                        <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                     </svg>
+                  </div>
+                  <div class="bacround-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                        <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z"
+                           fill="#001A25" />
+                     </svg>
+                  </div>
+                  <a>Read our blogs</a>
+
+               </div>
+            </div>
+            <div class="item">
+               <div class="item-img">
+                  <img src="./img/blogs/blog-1.webp" alt="">
+                  <h2>Blogs & Free resources</h2>
+               </div>
+               <div class="button">
+                  <div class="bacround-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                        <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                     </svg>
+                  </div>
+                  <div class="bacround-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                        <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z"
+                           fill="#001A25" />
+                     </svg>
+                  </div>
+                  <a>Read our blogs</a>
+
+               </div>
+            </div>
+            <div class="item">
+               <div class="item-img">
+                  <img src="./img/blogs/blog-1.webp" alt="">
+                  <h2>Blogs & Free resources</h2>
+               </div>
+               <div class="button">
+                  <div class="bacround-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                        <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                     </svg>
+                  </div>
+                  <div class="bacround-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                        <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z"
+                           fill="#001A25" />
+                     </svg>
+                  </div>
+                  <a>Read our blogs</a>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section testimonials">
+         <div class="title container">
+            <h2>testimonials</h2>
+         </div>
+         <div class="container testimonials-swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="78" height="66" viewBox="0 0 78 66" fill="none">
+                     <path
+                        d="M46.9971 65.0244C44.8258 58.8851 43.7402 52.3714 43.7402 45.4834C43.7402 29.8356 48.2699 15.7601 57.3291 3.25684L76.1963 0C69.9821 10.6315 66.6878 21.8245 66.3135 33.5791L74.8486 34.9268L77.4316 61.2061L46.9971 65.0244ZM3.25684 65.0244C1.08561 58.8851 0 52.3714 0 45.4834C0 29.8356 4.52962 15.7601 13.5889 3.25684L32.4561 0C26.2419 10.6315 22.9476 21.8245 22.5732 33.5791L31.1084 34.9268L33.6914 61.2061L3.25684 65.0244Z"
+                        fill="#0095A6" />
+                  </svg>
+
+                  <p>Alex’s approach connects with players in positive ways that makes an impact with their development.
+                     Alex is creative with how he adopts a constraint-led approach, designing unique small-sided games
+                     with purposeful constraints. These activities are the next frontier for basketball coaches
+                     interested in incorporating evidence based ideas into their practices.</p>
+
+                  <hr>
+                  <div class="avatar">
+                     <div>
+                        <img src="./img/testemonials/riview-1.svg" alt="">
+                     </div>
+                     <div class="text">
+                        <h3>Will Weaver</h3>
+                        <h4>Assistant Coach Brooklyn Nets</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="78" height="66" viewBox="0 0 78 66" fill="none">
+                     <path
+                        d="M46.9971 65.0244C44.8258 58.8851 43.7402 52.3714 43.7402 45.4834C43.7402 29.8356 48.2699 15.7601 57.3291 3.25684L76.1963 0C69.9821 10.6315 66.6878 21.8245 66.3135 33.5791L74.8486 34.9268L77.4316 61.2061L46.9971 65.0244ZM3.25684 65.0244C1.08561 58.8851 0 52.3714 0 45.4834C0 29.8356 4.52962 15.7601 13.5889 3.25684L32.4561 0C26.2419 10.6315 22.9476 21.8245 22.5732 33.5791L31.1084 34.9268L33.6914 61.2061L3.25684 65.0244Z"
+                        fill="#0095A6" />
+                  </svg>
+
+                  <p>Alex’s approach connects with players in positive ways that makes an impact with their development.
+                     Alex is creative with how he adopts a constraint-led approach, designing unique small-sided games
+                     with purposeful constraints. These activities are the next frontier for basketball coaches
+                     interested in incorporating evidence based ideas into their practices.</p>
+
+                  <hr>
+                  <div class="avatar">
+                     <div>
+                        <img src="./img/testemonials/riview-1.svg" alt="">
+                     </div>
+                     <div class="text">
+                        <h3>Will Weaver</h3>
+                        <p>Assistant Coach Brooklyn Nets</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="78" height="66" viewBox="0 0 78 66" fill="none">
+                     <path
+                        d="M46.9971 65.0244C44.8258 58.8851 43.7402 52.3714 43.7402 45.4834C43.7402 29.8356 48.2699 15.7601 57.3291 3.25684L76.1963 0C69.9821 10.6315 66.6878 21.8245 66.3135 33.5791L74.8486 34.9268L77.4316 61.2061L46.9971 65.0244ZM3.25684 65.0244C1.08561 58.8851 0 52.3714 0 45.4834C0 29.8356 4.52962 15.7601 13.5889 3.25684L32.4561 0C26.2419 10.6315 22.9476 21.8245 22.5732 33.5791L31.1084 34.9268L33.6914 61.2061L3.25684 65.0244Z"
+                        fill="#0095A6" />
+                  </svg>
+
+                  <p>Alex’s approach connects with players in positive ways that makes an impact with their development.
+                     Alex is creative with how he adopts a constraint-led approach, designing unique small-sided games
+                     with purposeful constraints. These activities are the next frontier for basketball coaches
+                     interested in incorporating evidence based ideas into their practices.</p>
+
+                  <hr>
+                  <div class="avatar">
+                     <div>
+                        <img src="./img/testemonials/riview-1.svg" alt="">
+                     </div>
+                     <div class="text">
+                        <h3>Will Weaver</h3>
+                        <p>Assistant Coach Brooklyn Nets</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="arrows">
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section blogs blogs-2">
+         <div class="container grid-2">
+            <div class="item">
+               <div class="item-img">
+                  <img src="./img/blogs/blog-1.webp" alt="">
+                  <h2>Blogs & Free resources</h2>
+               </div>
+               <div class="button">
+                  <div class="bacround-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                        <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                     </svg>
+                  </div>
+                  <div class="bacround-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                        <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z"
+                           fill="#001A25" />
+                     </svg>
+                  </div>
+                  <a>Read our blogs</a>
+
+               </div>
+            </div>
+
+            <div class="item">
+               <div class="item-img">
+                  <img src="./img/blogs/blog-1.webp" alt="">
+                  <h2>Blogs & Free resources</h2>
+               </div>
+               <div class="button">
+                  <div class="bacround-1">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                        <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                     </svg>
+                  </div>
+                  <div class="bacround-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                        <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z"
+                           fill="#001A25" />
+                     </svg>
+                  </div>
+                  <a>Read our blogs</a>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section contact">
+         <div class="container title">
+            <h2>Revolutionize the game </h2>
+         </div>
+         <div class="container">
+            <input type="text" placeholder="First Name *">
+            <input type="text" placeholder="E-mail *">
+
+            <div class="button">
+               <div class="bacround-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="270" height="56" viewBox="0 0 270 56" fill="none">
+                     <path d="M0 0.0603027H270L259.963 55.5228H10.0372L0 0.0603027Z" fill="#0095A6" />
+                  </svg>
+               </div>
+               <div class="bacround-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="241" height="68" viewBox="0 0 241 68" fill="none">
+                     <path d="M0.703857 0L240.264 12.6135L228.469 67.5311L6.72025 55.8554L0.703857 0Z" fill="#001A25" />
+                  </svg>
+               </div>
+               <a>Read our blogs</a>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="section companies">
+         <div class="container title">
+            <h2>Federations we have worked with</h2>
+         </div>
+         <div class="container">
+            <div class="img">
+               <img src="./img/companies/img-1.webp" alt="">
+            </div>
+            <div class="img">
+               <img src="./img/companies/img-2.webp" alt="">
+            </div>
+            <div class="img">
+               <img src="./img/companies/img-3.webp" alt="">
+            </div>
+            <div class="img">
+               <img src="./img/companies/img-4.webp" alt="">
+            </div>
+            <div class="img">
+               <img src="./img/companies/img-5.webp" alt="">
+            </div>
+            <div class="img">
+               <img src="./img/companies/img-6.webp" alt="">
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer section">
+      <div class="container">
+         <div class="footer-top">
+            <h2>MENU</h2>
+            <h2 class="footer-menu">FOLLOW US</h2>
+         </div>
+         <div class="footer-down">
+            <div class="grid-3">
+               <p>Home</p>
+               <p>Resourses</p>
+               <p>Contact</p>
+               <p>About</p>
+               <p>Product</p>
+            </div>
+
+            <div class="footer-text-follow">
+               <h2>FOLLOW US</h2>
+            </div>
+            <div class="social">
+               <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                     <path
+                        d="M34.8334 19.0961C34.8334 10.298 27.7454 3.16669 19.0001 3.16669C10.2548 3.16669 3.16675 10.298 3.16675 19.0961C3.16675 27.0486 8.95542 33.6385 16.5259 34.8334V23.7015H12.5063V19.095H16.5259V15.5864C16.5259 11.5942 18.8892 9.38813 22.5066 9.38813C24.2377 9.38813 26.0512 9.69952 26.0512 9.69952V13.6199H24.053C22.0865 13.6199 21.4743 14.8485 21.4743 16.1089V19.0961H25.8654L25.1635 23.7004H21.4743V34.8334C29.0447 33.6385 34.8334 27.0486 34.8334 19.0961Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19 4.75C15.1297 4.75 14.6452 4.76615 13.1252 4.8355C11.608 4.90485 10.5716 5.14615 9.6653 5.4986C8.7153 5.8558 7.85365 6.4163 7.14115 7.1421C6.41651 7.85378 5.85567 8.71482 5.49765 9.6653C5.1471 10.5716 4.90485 11.609 4.8355 13.1262C4.7671 14.6452 4.75 15.1287 4.75 19C4.75 22.8713 4.76615 23.3548 4.8355 24.8748C4.90485 26.392 5.14615 27.4284 5.4986 28.3347C5.8558 29.2847 6.4163 30.1463 7.1421 30.8588C7.8538 31.5835 8.71483 32.1443 9.6653 32.5023C10.5716 32.8538 11.608 33.0951 13.1252 33.1645C14.6452 33.2338 15.1297 33.25 19 33.25C22.8703 33.25 23.3548 33.2338 24.8748 33.1645C26.392 33.0951 27.4284 32.8538 28.3347 32.5014C29.2847 32.1442 30.1463 31.5837 30.8588 30.8579C31.5835 30.1462 32.1443 29.2852 32.5023 28.3347C32.8538 27.4284 33.0951 26.392 33.1645 24.8748C33.2338 23.3548 33.25 22.8703 33.25 19C33.25 15.1297 33.2338 14.6452 33.1645 13.1252C33.0951 11.608 32.8538 10.5716 32.5014 9.6653C32.1436 8.71441 31.5828 7.853 30.8579 7.14115C30.1462 6.41651 29.2852 5.85567 28.3347 5.49765C27.4284 5.1471 26.391 4.90485 24.8738 4.8355C23.3548 4.7671 22.8713 4.75 19 4.75ZM19 7.31785C22.8048 7.31785 23.256 7.3321 24.7589 7.4005C26.1478 7.46415 26.9021 7.695 27.4046 7.89165C28.0697 8.1491 28.5447 8.4588 29.0434 8.9566C29.5422 9.45535 29.8509 9.93035 30.1084 10.5953C30.3041 11.0979 30.5358 11.8522 30.5995 13.2411C30.6679 14.744 30.6821 15.1952 30.6821 19C30.6821 22.8048 30.6679 23.256 30.5995 24.7589C30.5358 26.1478 30.305 26.9021 30.1084 27.4046C29.8803 28.0236 29.5164 28.5836 29.0434 29.0434C28.5837 29.5165 28.0237 29.8804 27.4046 30.1084C26.9021 30.3041 26.1478 30.5358 24.7589 30.5995C23.256 30.6679 22.8057 30.6821 19 30.6821C15.1943 30.6821 14.744 30.6679 13.2411 30.5995C11.8522 30.5358 11.0979 30.305 10.5953 30.1084C9.97638 29.8803 9.41641 29.5164 8.9566 29.0434C8.48367 28.5836 8.11977 28.0236 7.89165 27.4046C7.69595 26.9021 7.46415 26.1478 7.4005 24.7589C7.3321 23.256 7.31785 22.8048 7.31785 19C7.31785 15.1952 7.3321 14.744 7.4005 13.2411C7.46415 11.8522 7.695 11.0979 7.89165 10.5953C8.1491 9.93035 8.4588 9.45535 8.9566 8.9566C9.41634 8.48354 9.97634 8.11963 10.5953 7.89165C11.0979 7.69595 11.8522 7.46415 13.2411 7.4005C14.744 7.3321 15.1952 7.31785 19 7.31785Z"
+                        fill="white" />
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19 23.7548C18.3756 23.7548 17.7573 23.6318 17.1805 23.3928C16.6036 23.1539 16.0794 22.8036 15.6379 22.3621C15.1964 21.9206 14.8462 21.3964 14.6072 20.8196C14.3683 20.2427 14.2453 19.6244 14.2453 19C14.2453 18.3756 14.3683 17.7573 14.6072 17.1804C14.8462 16.6036 15.1964 16.0794 15.6379 15.6379C16.0794 15.1964 16.6036 14.8461 17.1805 14.6072C17.7573 14.3682 18.3756 14.2453 19 14.2453C20.2611 14.2453 21.4705 14.7462 22.3622 15.6379C23.2538 16.5296 23.7548 17.739 23.7548 19C23.7548 20.261 23.2538 21.4704 22.3622 22.3621C21.4705 23.2538 20.2611 23.7548 19 23.7548ZM19 11.6755C17.0575 11.6755 15.1944 12.4472 13.8208 13.8208C12.4472 15.1944 11.6755 17.0574 11.6755 19C11.6755 20.9426 12.4472 22.8056 13.8208 24.1792C15.1944 25.5528 17.0575 26.3245 19 26.3245C20.9426 26.3245 22.8056 25.5528 24.1792 24.1792C25.5528 22.8056 26.3245 20.9426 26.3245 19C26.3245 17.0574 25.5528 15.1944 24.1792 13.8208C22.8056 12.4472 20.9426 11.6755 19 11.6755ZM28.4554 11.5425C28.4554 12.0017 28.273 12.4421 27.9483 12.7668C27.6236 13.0915 27.1832 13.2739 26.724 13.2739C26.2648 13.2739 25.8244 13.0915 25.4997 12.7668C25.175 12.4421 24.9926 12.0017 24.9926 11.5425C24.9926 11.0833 25.175 10.6429 25.4997 10.3182C25.8244 9.99354 26.2648 9.81113 26.724 9.81113C27.1832 9.81113 27.6236 9.99354 27.9483 10.3182C28.273 10.6429 28.4554 11.0833 28.4554 11.5425Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                     <path
+                        d="M31.5915 12.5401C31.6108 12.8193 31.6108 13.0984 31.6108 13.3802C31.6108 21.9649 25.0755 31.8656 13.1254 31.8656V31.8604C9.59528 31.8656 6.13851 30.8544 3.16675 28.9479C3.68005 29.0096 4.19593 29.0405 4.7131 29.0418C7.63855 29.0443 10.4804 28.0628 12.7819 26.2553C10.0018 26.2025 7.56393 24.3899 6.71228 21.7436C7.68615 21.9314 8.6896 21.8928 9.64545 21.6317C6.61451 21.0193 4.43393 18.3563 4.43393 15.2636C4.43393 15.2353 4.43393 15.2083 4.43393 15.1813C5.33704 15.6843 6.34821 15.9634 7.38254 15.9943C4.52784 14.0865 3.64789 10.2888 5.37177 7.31958C8.6703 11.3784 13.5371 13.8459 18.7614 14.107C18.2378 11.8506 18.9531 9.48601 20.641 7.89979C23.2577 5.44004 27.3731 5.56611 29.8329 8.18152C31.2879 7.89464 32.6824 7.36075 33.9586 6.6043C33.4736 8.10819 32.4586 9.38567 31.1026 10.1974C32.3904 10.0456 33.6486 9.70085 34.8334 9.17469C33.9612 10.4817 32.8625 11.6203 31.5915 12.5401Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                     <path
+                        d="M30.1924 9.76451C28.3969 8.62306 27.1009 6.79674 26.6967 4.66774C26.6093 4.20775 26.5614 3.73435 26.5614 3.24998H20.8307L20.8215 25.6424C20.7252 28.15 18.6084 30.1626 16.0135 30.1626C15.207 30.1626 14.4475 29.966 13.7789 29.6229C12.2456 28.8362 11.1963 27.2691 11.1963 25.4658C11.1963 22.8759 13.3574 20.7688 16.0135 20.7688C16.5093 20.7688 16.9849 20.8486 17.4349 20.986V15.2819C16.9692 15.2201 16.4962 15.1814 16.0135 15.1814C10.1972 15.1814 5.46558 19.795 5.46558 25.4658C5.46558 28.9452 7.2485 32.0242 9.96855 33.8861C11.6819 35.0588 13.7659 35.75 16.0135 35.75C21.8297 35.75 26.5614 31.1367 26.5614 25.4658V14.111C28.809 15.6839 31.5628 16.6107 34.5342 16.6107V11.0233C32.9335 11.0233 31.4427 10.5594 30.1924 9.76451Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M31.3375 8.57336C32.6993 8.93921 33.7765 10.0165 34.1424 11.3782C34.8131 13.8579 34.8334 19.0002 34.8334 19.0002C34.8334 19.0002 34.8334 24.1628 34.1627 26.6221C33.7968 27.9839 32.7196 29.0612 31.3578 29.427C28.8985 30.0978 19.0001 30.0978 19.0001 30.0978C19.0001 30.0978 9.10171 30.0978 6.64236 29.427C5.28057 29.0612 4.20333 27.9839 3.83748 26.6221C3.16675 24.1425 3.16675 19.0002 3.16675 19.0002C3.16675 19.0002 3.16675 13.8579 3.81715 11.3986C4.18301 10.0368 5.26024 8.95955 6.62203 8.5937C9.08138 7.92295 18.9798 7.90263 18.9798 7.90263C18.9798 7.90263 28.8781 7.90263 31.3375 8.57336ZM24.0407 19.0002L15.8293 23.7563V14.2441L24.0407 19.0002Z"
+                        fill="white" />
+                  </svg>
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="./js/swiper-bundle2.min.js"></script>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>

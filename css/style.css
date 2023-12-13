@@ -1338,6 +1338,13 @@ header{
       right: 20px;
       width: 15px;
    }
+
+   .we-streave-bottom p, .information .title h2{
+      font-size: 25px;
+      line-height: 28px;
+      max-width: 80%;
+      margin: 0 auto;
+   }
 }
 
 
@@ -1404,12 +1411,7 @@ header{
    }
 
 
-   .we-streave-bottom p, .information .title h2{
-      font-size: 25px;
-      line-height: 28px;
-      max-width: 80%;
-      margin: 0 auto;
-   }
+
 
 
    .online-education .title h3{
@@ -1446,7 +1448,12 @@ header{
    .svg-pc{
       display: none;
    }
-
+   .information .svg-mobile{
+      display: none;
+   }
+   .information .svg-pc{
+      display: block;
+   }
    .blogs .title h2{
       font-size: 30px;
       line-height: 30px;
@@ -1527,7 +1534,14 @@ header{
 
 
 
-
+@media screen and (max-width:600px){
+   .information .svg-mobile{
+      display: block;
+   }
+   .information .svg-pc{
+      display: none;
+   }
+}
 
 
 

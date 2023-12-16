@@ -764,7 +764,9 @@ header{
 
 
 
-
+.blogs .mobile{
+   display: none;
+}
 
 .blogs{
    position: relative;
@@ -1498,6 +1500,12 @@ header{
 }
 
 @media screen and (max-width:720px) {
+   .blogs .mobile{
+      display:block;
+   }
+   .blogs .pc{
+      display:none;
+   }
    .header-mobile-text{
       display: block;
    }
@@ -1672,8 +1680,9 @@ header{
    }
    .blogs .title h3{
       padding: 40px 20px;
-      font-size: 38px;
-      line-height: 40px;
+      font-size: 50px;
+      margin-top: 5px;
+      line-height: 45px;
    }
    .header-container{
       margin-right: 70px;

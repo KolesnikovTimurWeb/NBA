@@ -273,6 +273,26 @@ header{
    background-color: #FFF;
 
 }
+.header-mobile-text p{
+   background-color: #0095A6;
+   padding: 1px 4px;
+   color: #FFF;
+   text-align: center;
+   font-family: Kapra Neue;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   border-radius: 5px;
+   background: #0095A6;
+}
+.header-mobile-text{
+   position: fixed;
+   top: 70px;
+   left: 0px;
+   width: 100%;
+   padding: 20px;
+   display: none;
+}
 .header-div{
    display: flex;
    width: 100%;
@@ -434,9 +454,10 @@ header{
 }
 .main-decoration {
    position: absolute;
-   bottom: -10px;
+   bottom: -62px;
    left: 0;
    width: 100%;
+   overflow: hidden;
 }
 
 
@@ -1003,7 +1024,17 @@ header{
 
 
 
+.contact .title h3{
+   color:  #001A25;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 27.8px;
+   text-transform: uppercase;
+   display: none;
+   font-family: "Kapra Neue";
 
+}
 .contact .title h2{
    color: var(--1-color, #001A25);
    text-align: center;
@@ -1214,7 +1245,17 @@ header{
 .footer-text-follow{
    display: none;
 }
+@media screen and (min-width:1600px) {
+   .main-decoration{
+      bottom: -85px;
+   }
+}
 @media screen and (max-width:1220px){
+   .main-decoration img{
+      width: auto;
+      max-width: 1200px;
+   }
+
    .footer-menu{
       display: none;
    }
@@ -1347,8 +1388,151 @@ header{
    }
 }
 
+@media screen and (max-width:1620px){
+   .information .image img{
+      width: 80%;
+   }
+   .blogs .title h3{
+      font-size: 75px;
+   }
+   .blogs .title h2{
+      font-size: 45px;
+      padding: 5px 50px;
+   }
+   .header-logo-text{
+    max-width: 125px;
+  }
+  .we-strave-top h2, .we-strave-top span {
+   line-height: 44px;
+   font-size: 50px;
+   }
+   .we-strave-top img {
+      max-width: 80%;
+   }
+   .we-strave-top{
+      justify-content: center;
+      gap: 10px;
+   }
+  .header-logo-img{
+   max-width: 50px;
+   }
+   .online-education .title h2{
+      font-size: 50px;
+   }
+   .online-education .title h2{
+      padding: 5px 50px;
+   }
+   .online-education .title h3{
+      font-size: 90px;
+   }
+
+   .main-section .text h1, .main-section .text span{
+      font-size: 90px;
+      line-height: 90px;
+   }
+
+   .online-education .items{
+      max-width: 380px;
+      height: 400px;
+   }
+   .online-education .items h2{
+      font-size: 56px;
+      margin: 20px;
+   }
+
+   .container{
+      max-width: 79%;
+   }
+   .online-education .bacround-1,
+   .online-education .bacround-4{
+      height: 100%;
+   }
+   .online-education .bacround-1 svg,
+   .online-education .bacround-4 svg{
+      height: 100%;
+   }
+   .information .image{
+      width: 85%;
+      margin: 0 auto;
+   }
+   .avatar img{
+      max-width: 0px;
+   }
+   .testimonials-swiper .swiper-slide p{
+      font-size: 21px;
+   }
+   .blogs .item-img h2{
+      font-size: 60px;
+   }
+   .online-education .active p{
+      margin-top: 150px;
+   }
+   .blogs .title h3 {
+      font-size: 85px;
+  }
+  .blogs .title .div{
+   margin-bottom: -35px;
+  }
+  .blogs .item{
+   padding-bottom: 50px;
+  }
+  .testimonials-swiper .swiper-slide p{
+   font-size: 19px;
+  }
+  .header-button{
+   padding: 18px 7px;
+
+  }
+  .we-streave-bottom p, .information .title h2{
+   font-size: 32px;
+   line-height: 40px;
+  }
+  .testimonials .title h2{
+   font-size: 96px;
+  }
+  .main-section .text h1, .main-section .text span{
+   font-size: 90px;
+   line-height: 90px;
+  }
+
+}
 
 @media screen and (max-width:720px) {
+   .header-mobile-text{
+      display: block;
+   }
+   .contact .title h3{
+      display: block;
+      margin-bottom: 20px;
+   }
+   .testimonials-swiper{
+      margin-top: 60px;
+   }
+   .we-streave-bottom .text-block::before,
+   .we-streave-bottom .text-block::after{
+      width: 10px;
+   }
+   .contact .container.title{
+      gap: 5px;
+   }
+   .contact .title h2{
+      margin-bottom: 0;
+   }
+   .we-streave-bottom p, .information .title h2{
+      font-size: 24px;
+      line-height: 28px;
+   }
+   .container {
+      max-width: 96%;
+   }
+   .main-decoration img{
+      max-width: 950px;
+   }
+   .main-decoration{
+      bottom: -39px;
+   }
+
+
    .footer-text-follow h2,
    .footer-top h2{
       font-size: 50px;
@@ -1367,18 +1551,25 @@ header{
       padding: 10px;
    }
    .header-logo-img{
-      max-width: 50px;
+      max-width: 43px;
    }
    .header-logo-text{
-      max-width: 110px;
+      max-width: 100px;
    }
    .header-button{
       font-size: 15px;
       
    }
+   .header-logo{
+      gap: 5px;
+   }
+
+   .header-button {
+      padding: 15px 5px;
+  }
    .header-absolute .header-top p{
       font-size: 15px;
-      padding: 15px;
+      padding: 10px;
    }
    .header-absolute{
       padding: 5px;
@@ -1386,12 +1577,12 @@ header{
    .header-container{
       padding: 10px;
    }
-   .header-absolute{
-      width: 80px;
-      height: 75px;
-   }
+   .header-absolute {
+      width: 70px;
+      height: 65px;
+  }
    .main-section .text{
-      margin-top: 200px;
+      margin-top: 260px;
    }
    .main-section .text h1, .main-section .text span{
       font-size: 65px;
@@ -1402,15 +1593,20 @@ header{
       gap: 30px;
    }
    .we-strave-top h2, .we-strave-top span{
-      font-size: 35px;
-      line-height: 35px;
+      font-size: 37px;
+      line-height: 34px;
    }
 
    .we-strave-top img{
-      max-width: 80px;
+      max-width: 85px;
    }
-
-
+   .information .image img{
+      width: 100%;
+      height: 228px;
+   }
+   .information .mobile{
+      margin-bottom: 30px;
+   }
 
 
 
@@ -1421,8 +1617,23 @@ header{
    .online-education .title h2{
       font-size: 30px;
       line-height: 30px;
-      padding: 20px 50px;
+      padding: 25px 50px;
 
+   }
+   .testimonials .title h2{
+      font-size: 60px;
+   }
+   .blogs .item-img h2,
+   .blogs-2 .item-img h2{
+      font-size: 47px;
+      line-height: 40px;
+   }
+   .blogs .button a{
+      font-size: 20px;
+   }
+   .online-education .title,
+   .blogs .title{
+      margin-bottom: 100px;
    }
    .online-education .items{
       height: 350px;
@@ -1455,6 +1666,7 @@ header{
       display: block;
    }
    .blogs .title h2{
+      padding: 5px 20px;
       font-size: 30px;
       line-height: 30px;
    }
@@ -1463,7 +1675,9 @@ header{
       font-size: 38px;
       line-height: 40px;
    }
-
+   .header-container{
+      margin-right: 70px;
+   }
    .blogs .item{
       padding: 10px;
       padding-bottom: 50px;
@@ -1507,18 +1721,15 @@ header{
       left: 30% !important;
    }
 
-
-   .blogs-2 .item-img h2{
-      font-size: 50px;
-      line-height: 45px;
+   .contact .button a{
+      font-size: 20px;
    }
-
    .contact .title h2{
       font-size: 50px;
       line-height: 45px;
    }
    .contact .container{
-      max-width: 400px;
+      max-width: 340px;
    }
    .companies .title h2{
       font-size: 30px;
@@ -1528,6 +1739,15 @@ header{
    .online-education .active p{
       font-size: 18px;
       margin-top: 150px;
+   }
+
+   .we-streave-bottom .pc{
+      display: none;
+   }
+   .we-streave-bottom .mobile{
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 20px;
    }
 }
 
@@ -2148,6 +2368,31 @@ header{
 .mission-container.mobile{
    display: none;
 }
+@media screen and (max-width:1660px) {
+   .mission-testemonials .title h3,
+   .mission-pillars .title h3{
+      font-size: 90px;
+      line-height: 80px;
+     }
+
+     .testemonials-swiper .swiper-slide .item, .testemonials-swiper-2 .swiper-slide .item{
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 40px;
+     }
+
+     .mission-youtube .title h2,
+     .mission-youtube .title h2 span{
+      font-size: 90px;
+     }
+
+   .title .svg-1{
+      max-width: 280px ;
+     }
+   .title .svg-2{
+      max-width: 380px;
+     }
+}
 @media screen and (max-width:1220px){
    .mission-testemonials .title div,
    .mission-pillars .title div{
@@ -2209,6 +2454,30 @@ header{
 
 
 @media screen and (max-width:720px){
+   .mission-pillars,
+   .mission-testemonials{
+      padding: 200px 0;
+   }
+   .mission-testemonials .title h2,
+   .mission-pillars .title h3{
+      padding: 40px 50px;
+   }
+   .title .svg-1{
+      max-width: 100% ;
+     }
+   .title .svg-2{
+      max-width: 100%;
+     }
+   .mission-youtube .button a{
+      font-size: 20px;
+   }
+   .mission-pillars .title,
+   .mission-testemonials .title{
+      margin-bottom: 60px;
+   }
+   .testemonials-swiper{
+      display: none;
+   }
    .mission-swiper .swiper-slide .item-top h2{
       width: 60%;
       font-size: 50px;

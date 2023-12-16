@@ -191,3 +191,28 @@ onlineEducation.forEach(el => {
       block.classList.toggle('block')
    })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+ScrollReveal({
+   distance: '100px',
+   duration: 1700,
+   delay: 0,
+   reset: false,
+});
+ScrollReveal().reveal(".main-section .text", { delay: 300, origin: "top", interval: 100 });
+ScrollReveal().reveal(".title div", { delay: 300, origin: "bottom", interval: 100 });
+ScrollReveal().reveal(".online-education .items", { delay: 300, origin: "left", interval: 300 });
+ScrollReveal().reveal(".blogs .item", { delay: 300, origin: "left", interval: 300 });
+ScrollReveal().reveal(".we-strave-top div", { delay: 400, origin: "bottom" });
+ScrollReveal().reveal(".we-strave-top h2 ", { delay: 500, origin: "bottom" });
+ScrollReveal().reveal(".we-streave-bottom", { delay: 600, origin: "bottom" });

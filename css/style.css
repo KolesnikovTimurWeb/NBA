@@ -279,7 +279,7 @@ header{
    color: #FFF;
    text-align: center;
    font-family: Kapra Neue;
-   font-size: 14px;
+   font-size: 16px;
    font-weight: 400;
    text-transform: uppercase;
    border-radius: 5px;
@@ -290,7 +290,7 @@ header{
    top: 70px;
    left: 0px;
    width: 100%;
-   padding: 20px;
+   padding: 20px 10px;
    display: none;
 }
 .header-div{
@@ -1562,7 +1562,7 @@ header{
       max-width: 43px;
    }
    .header-logo-text{
-      max-width: 100px;
+      max-width: 120px;
    }
    .header-button{
       font-size: 15px;
@@ -1577,7 +1577,7 @@ header{
   }
    .header-absolute .header-top p{
       font-size: 15px;
-      padding: 10px;
+      padding: 15px 10px;
    }
    .header-absolute{
       padding: 5px;
@@ -1757,6 +1757,10 @@ header{
       display: block;
       margin-top: 50px;
       margin-bottom: 20px;
+   }
+
+   .header-absolute .header-top .close{
+      padding: 15px;
    }
 }
 

@@ -220,15 +220,15 @@ ScrollReveal({
    delay: 0,
    reset: false,
 });
-ScrollReveal().reveal(".main-section .text", { delay: 300, origin: "top", interval: 100 });
-ScrollReveal().reveal(".title div", { delay: 300, origin: "bottom", interval: 100 });
-ScrollReveal().reveal(".online-education .items", { delay: 300, origin: "left", interval: 300 });
-ScrollReveal().reveal(".blogs .item", { delay: 300, origin: "left", interval: 300 });
-ScrollReveal().reveal(".we-strave-top div", { delay: 400, origin: "bottom" });
-ScrollReveal().reveal(".we-strave-top h2 ", { delay: 500, origin: "bottom" });
-ScrollReveal().reveal(".we-streave-bottom", { delay: 600, origin: "bottom" });
-ScrollReveal().reveal(".main-section .text", { delay: 300, origin: "bottom" });
-ScrollReveal().reveal(".mission-the", { delay: 300, origin: "top" });
-ScrollReveal().reveal(".mission-youtube .container", { delay: 300, origin: "top" });
-ScrollReveal().reveal(".mission-mobile-block .item", { delay: 300, origin: "left", interval: 300 });
+ScrollReveal().reveal(".main-section .text", { delay: 100, origin: "top", interval: 100 });
+ScrollReveal().reveal(".title div", { delay: 100, origin: "bottom", interval: 100 });
+ScrollReveal().reveal(".online-education .items", { delay: 100, origin: "left", interval: 100 });
+ScrollReveal().reveal(".blogs .item", { delay: 100, origin: "left", interval: 100 });
+ScrollReveal().reveal(".we-strave-top div", { delay: 200, origin: "bottom" });
+ScrollReveal().reveal(".we-strave-top h2 ", { delay: 300, origin: "bottom" });
+ScrollReveal().reveal(".we-streave-bottom", { delay: 400, origin: "bottom" });
+ScrollReveal().reveal(".main-section .text", { delay: 100, origin: "bottom" });
+ScrollReveal().reveal(".mission-the", { delay: 100, origin: "top" });
+ScrollReveal().reveal(".mission-youtube .container", { delay: 100, origin: "top" });
+ScrollReveal().reveal(".mission-mobile-block .item", { delay: 100, origin: "left", interval: 100 });
 

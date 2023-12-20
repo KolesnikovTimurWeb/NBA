@@ -396,12 +396,14 @@ header{
    display: none;
   
 }
-.header-top.active .close{
-   display: block;
+@media screen and (max-width:1200px) {
+   .header-top.active .close{
+      display: block;
+   }  
 }
 .header-top.active .menu{
-   display: none;
-}
+   display: block ;
+}  
 
 .main-becround source,
 .main-becround video{

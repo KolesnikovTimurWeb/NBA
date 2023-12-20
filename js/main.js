@@ -11,12 +11,12 @@ const swiper3 = new Swiper('.testimonials-swiper', {
    },
    breakpoints: {
       // when window width is >= 320px
-      1200: {
+      1000: {
          slidesPerView: 2,
          spaceBetween: 20
       },
       // when window width is >= 480px
-      1700: {
+      1200: {
          slidesPerView: 3,
          spaceBetween: 30
       },

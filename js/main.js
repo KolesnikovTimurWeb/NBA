@@ -37,14 +37,14 @@ const swiper = new Swiper('.mission-swiper', {
    },
    breakpoints: {
       // when window width is >= 320px
-      1200: {
+      800: {
          slidesPerView: 2,
          spaceBetween: 20
       },
       // when window width is >= 480px
-      1700: {
+      1450: {
          slidesPerView: 3,
-         spaceBetween: 30
+         spaceBetween: 50
       },
 
    }
@@ -63,12 +63,12 @@ const swiper2 = new Swiper('.testemonials-swiper-2', {
    },
    breakpoints: {
       // when window width is >= 320px
-      1200: {
+      1000: {
          slidesPerView: 2,
          spaceBetween: 20
       },
       // when window width is >= 480px
-      1700: {
+      1200: {
          slidesPerView: 3,
          spaceBetween: 30
       },
@@ -90,12 +90,12 @@ const swiper4 = new Swiper('.testemonials-swiper', {
    },
    breakpoints: {
       // when window width is >= 320px
-      1200: {
+      1000: {
          slidesPerView: 2,
          spaceBetween: 20
       },
       // when window width is >= 480px
-      1700: {
+      1200: {
          slidesPerView: 3,
          spaceBetween: 30
       },
@@ -184,15 +184,26 @@ if (window.innerWidth < 1220) {
 
 
 let onlineEducation = document.querySelectorAll('.online-education .grid .items ')
-
-onlineEducation.forEach(el => {
-   el.addEventListener('click', function () {
+if (window.innerWidth < 1220) {
+   onlineEducation.forEach(el => {
       let block = el.querySelector('.active')
-      block.classList.toggle('block')
+      block.classList.add('block')
    })
-})
+} else {
+   onlineEducation.forEach(el => {
+      el.addEventListener('mouseover', function () {
+         let block = el.querySelector('.active')
+         block.classList.add('block')
+      })
+   })
 
-
+   onlineEducation.forEach(el => {
+      el.addEventListener('mouseout', function () {
+         let block = el.querySelector('.active')
+         block.classList.remove('block')
+      })
+   })
+}
 
 
 

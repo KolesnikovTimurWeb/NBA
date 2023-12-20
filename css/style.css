@@ -441,6 +441,7 @@ header{
 .main-section .text h1{
    color: #FFF;
    font-family: "Kapra Neue";
+   max-width: 800px;
    font-size: 128px;
    font-weight: 600;
    line-height: 114px; 

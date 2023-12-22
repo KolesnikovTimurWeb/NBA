@@ -184,7 +184,7 @@ header{
    transition: .2s ease-in-out;
 }
 .header-bottom a{
-   padding: 25px;
+   padding: 20px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -662,11 +662,12 @@ header{
    background-color: #0095A6;
    padding: 25px;
 
-   background-image: url('../img/online/active-img-1.webp');
 }
 .online-education .items{
    position: relative;
    background-color: #0095A6;
+   background-image: url('../img/online/online-1.webp');
+
    max-width: 480px;
    width: 100%;
    padding: 20px;
@@ -675,26 +676,38 @@ header{
    justify-content: start;
    height: 480px;
 }
+.online-education .items:nth-child(1) .active{
+   background-image: url('../img/online/active-img-1.webp');
 
+}
+.online-education .items:nth-child(2) .active{
+   background-image: url('../img/online/active-img-2.webp');
+}
+.online-education .items:nth-child(3) .active{
+   background-image: url('../img/online/active-img-3.webp');
+}
+.online-education .items:nth-child(2){
+   background-image: url('../img/online/online-2.webp');
+
+}
+.online-education .items:nth-child(3){
+   background-image: url('../img/online/online-3.webp');
+
+}
 .online-education .bacround-1{
-   position: absolute;
-   top: 0;
-   right: 0;
+   display: none;
+
 }
 .online-education .bacround-2{
-   position: absolute;
-   top: 0;
-   right: 0;
+   display: none;
 }
 .online-education .bacround-3{
-   position: absolute;
-   top: 0;
-   left: 0;
+   display: none;
+
 }
 .online-education .bacround-4{
-   position: absolute;
-   top: 0;
-   right: 120px;
+   display: none;
+
 }
 
 
@@ -778,10 +791,11 @@ header{
 }
 
 .blogs{
+   margin-top: -50px;
    position: relative;
    background-image: url('../img/blogs/bacround.webp');
    background-color: transparent;
-   padding: 300px 0;
+   padding: 210px 0;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -874,6 +888,20 @@ header{
    line-height: 65px;
    text-transform: uppercase;
 }
+.blogs .item-img h3{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+
+   color: #FFF;
+   text-align: center;
+   font-family: "Kapra Neue";
+   font-size: 70px;
+   font-weight: 600;
+   line-height: 65px;
+   text-transform: uppercase;
+}
 .blogs .button{
    position: relative;
    width: 100%;
@@ -902,7 +930,7 @@ header{
    color: #FFF;
    text-align: center;
    font-family:"Open Sans";
-   font-size: 25px;
+   font-size: 22px;
    font-weight: 600;
    letter-spacing: -0.5px;
 }
@@ -927,7 +955,7 @@ header{
 .blogs .grid-2{
    display: grid;
    grid-template-columns: repeat(2,1fr);
-   gap: 20px;
+   gap: 80px;
    justify-items: center;
 }
 
@@ -1046,6 +1074,7 @@ header{
    font-family: "Kapra Neue";
 
 }
+.contact .title h2 span,
 .contact .title h2{
    color: var(--1-color, #001A25);
    text-align: center;
@@ -1197,13 +1226,20 @@ header{
    display: flex;
    justify-content: space-between;
 }
+
 @media screen and (max-width:1720px) {
    .container{
       max-width: 90%;
    }
-
-   .header-text{
-      display: none;
+   .blogs .item-img h3{
+      font-size: 60px;
+   }
+   .header-text h3{
+      line-height: 2rem;
+      font-size: 20px;
+   }
+   .header-stroke{
+      margin: 0 1rem;
    }
    .we-strave-top h2,
    .we-strave-top span{
@@ -1228,13 +1264,20 @@ header{
    .blogs .title h3{
       font-size: 110px;
    }
+   .blogs .item-img h2{
+      line-height: 50px;
+      font-size: 50px;
+   }
    .blogs .grid{
-      grid-template-columns: repeat(2,1fr);
+      gap: 40px;
+      grid-template-columns: repeat(3,1fr);
    }
    .contact .container{
       max-width: 1100px;
    }
-   .contact .title h2{
+   .contact .title h2,
+   .footer-top h2,
+   .contact .title h2 span{
       font-size: 96px;
       line-height: 90px;
    }
@@ -1256,13 +1299,38 @@ header{
 .footer-text-follow{
    display: none;
 }
+.footer-terms{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 50px;
+}
+.footer-terms p{
+   color: #FFF;
+   font-family: Open Sans;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: uppercase;
+   opacity: 0.5;
+}
 @media screen and (min-width:1600px) {
    .main-decoration{
       bottom: -85px;
    }
 
 }
+@media screen and (max-width:1320px){
+   .header-text{
+      display: none;
+   }
+   .footer-terms p{
+      font-size: 16px;
+   }
+}
 @media screen and (max-width:1500px) {
+   
    .mission-pillars .block-buttons .item{
       padding: 15px;
    }
@@ -1284,7 +1352,10 @@ header{
       font-size: 25px;
    }
    .footer .social{
-      gap: 5px;
+      gap: 15px;
+   }
+   .footer-down a{
+      padding: 15px 20px;
    }
 }
 @media screen and (max-width:1220px){
@@ -1384,7 +1455,11 @@ header{
    .contact .container{
       max-width: 700px;
    }
-   .contact .title h2 {
+
+   .contact .title h2,
+   .footer-top h2,
+   .footer-text-follow h2,
+   .contact .title h2 span {
       font-size: 80px;
       line-height: 70px;
   }
@@ -1426,8 +1501,15 @@ header{
 }
 
 @media screen and (max-width:1620px){
+   .testimonials-swiper .swiper-slide p{
+      font-size: 20px;
+   }
+   .blogs .item-img h2{
+      font-size: 40px;
+      line-height: 40px;
+   }
    .information .image img{
-      width: 80%;
+      width: 85%;
    }
    .blogs .title h3{
       font-size: 75px;
@@ -1479,7 +1561,7 @@ header{
    }
 
    .container{
-      max-width: 79%;
+      max-width: 82%;
    }
    .online-education .bacround-1,
    .online-education .bacround-4{
@@ -1496,14 +1578,15 @@ header{
    .avatar img{
       max-width: 0px;
    }
+   .blogs .item{
+      padding: 15px;
+   }
    .testimonials-swiper .swiper-slide p{
       font-size: 21px;
    }
-   .blogs .item-img h2{
-      font-size: 60px;
-   }
    .online-education .active p{
       margin-top: 150px;
+      font-size: 20px;
    }
    .blogs .title h3 {
       font-size: 85px;
@@ -1536,6 +1619,9 @@ header{
 }
 
 @media screen and (max-width:720px) {
+   .contact .title h2 span{
+      display: none;
+   }
    .blogs .mobile{
       display:block;
    }
@@ -1809,6 +1895,10 @@ header{
 
    .online-education {
       padding: 150px 0;
+   }
+
+   .blogs .item-img h3{
+      font-size: 40px;
    }
 }
 
